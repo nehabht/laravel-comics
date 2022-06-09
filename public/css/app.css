@@ -10291,6 +10291,14 @@ main .row {
   position: relative;
 }
 
+.cover img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
 .cover h6 {
   color: white;
   text-transform: uppercase;
