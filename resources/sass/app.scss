@@ -1,1 +1,71 @@
-//
+@use 'bootstrap';
+
+/* Color palette */
+
+$comics_primary: #0282F9;
+
+
+
+/* Site Header */
+
+#site_header {
+    .top_header {
+
+        background-color: $comics_primary;
+
+        .container {
+            height: 25px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .menu_nav {
+        height: 120px;
+        margin: auto;
+
+        .logo_img {
+            height: 60px;
+            width: 60px;
+        }
+
+        .menu {
+            .active_text {
+                color: $comics_primary;
+                border-bottom: 5px solid $comics_primary;
+            }
+
+            a {
+                margin: 1rem;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 14px;
+                padding-bottom: 20px;
+                color: black;
+                position: relative;
+
+                &:hover {
+                    color: $comics_primary;
+                    border-bottom: 5px solid $comics_primary;
+                }
+            }
+
+
+
+     
+        }
+
+
+        .search_bar{
+            color:gray;
+            font-weight: 400;
+            padding-bottom: 2px;
+            border-bottom: 3px solid $comics_primary;
+        }
+    }
+
+}
