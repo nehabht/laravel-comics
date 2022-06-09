@@ -15,12 +15,17 @@
 
     </head>
     <body>
-
-            <!-- header -->
+        <!-- header -->
             @include('partials.header')
-
-
+        
+        <!-- main -->
         <main>
+            <!-- jumbo -->
+            @include('partials.jumbo')
+
+            <!-- albums section -->
+            @include('partials.comics')
+
 
         </main>
 

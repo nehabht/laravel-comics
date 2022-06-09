@@ -56,16 +56,141 @@ $comics_primary: #0282F9;
 
 
 
-     
+
         }
 
 
-        .search_bar{
-            color:gray;
+        .search_bar {
+            color: gray;
             font-weight: 400;
             padding-bottom: 2px;
             border-bottom: 3px solid $comics_primary;
         }
+    }
+
+}
+
+
+/* main */
+
+/* main jumbo */
+
+main{
+    background-color: #1C1C1C;
+    width: 100%;
+
+    .row{
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+
+}
+
+
+
+
+.jumbo {
+    height: 25vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.cover{
+
+    h6{
+        color: white;
+        text-transform: uppercase;
+        margin-top: 8px;
+        margin-bottom:15px
+    }
+}
+
+
+.btn_current{
+    background-color: #0282F9;
+    color:white;
+    padding: 10px 25px;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    margin-top: -10px;
+    position: relative;
+    z-index: 1000;
+}
+
+
+.more{
+    width: 100%;
+    display: inline;
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 13px;
+    border:none;
+
+    .btn_more{
+        color:white;
+        background-color: #0282F9;
+        padding: 7px 35px;
+        border: none;
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 1rem;
+    
+        
+    }
+}
+
+
+
+
+
+
+
+
+/* buy section */
+
+.img {
+    width: 100%;
+}
+
+.cards_buy {
+    display: flex;
+    height: 100px;
+}
+
+.buy_section {
+    background-color: $comics_primary;
+
+    .container_cards{
+        max-width: 1423px;
+        background-color: transparent;
+        height: 100px;
+        margin: 0 auto;
+      }
+
+}
+
+.card_buy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+    img {
+        max-height: 40px;
+    }
+
+    p {
+        color: white;
+        padding-left: 1rem;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding-top: 1rem
+rem
+;
     }
 
 }
