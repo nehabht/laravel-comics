@@ -20,18 +20,21 @@
         
         <!-- main -->
         <main>
+
             <!-- jumbo -->
             @include('partials.jumbo')
+            
+            <!-- page content -->
+            @yield('content')
 
-            <!-- albums section -->
-            @include('partials.comics')
-
-
+            
         </main>
 
         <footer>
 
         </footer>
+
+
 
 
     </body>

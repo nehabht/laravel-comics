@@ -1,16 +1,21 @@
+@extends('layouts.app')
+
+@section('content')
+
 
 <div>
     <div class="container">
         <button class="btn_current">CURRENT SERIES</button>
         
         <div class="row covers row-cols-6">
-            @foreach($comics as $comic)
-            <div class="col">
-                <div class="cover">
-                    <img class="" src="{{ $comic['thumb'] }}" alt="">
-                    <h6>{{ $comic['series'] }}</h6>
-                </div>
-            </div>
+            @foreach($comics as $index => $comic)
+            <a href="{{route('comic', $index)}}">
+              <div class="col">
+                  <div class="cover">
+                      <img class="" src="{{ $comic['thumb'] }}" alt="">
+                      <h6>{{ $comic['series'] }}</h6>
+                  </div>
+              </div>
 
 
             @endforeach
@@ -57,3 +62,8 @@
 
 
 </div>
+
+
+
+
+@endsection
